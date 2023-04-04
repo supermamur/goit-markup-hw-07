@@ -1,0 +1,138 @@
+:root {
+  /* Colors */
+  --primary-brand-color: #4d5ae5;
+  --active-state-color: #404bbf;
+  --primary-heading-color: #2e2f42;
+  --general-text-color: #434455;
+  --helper-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-bg-color: #f4f4fd;
+  --overlay-color: #2e2f42;
+  --hero-bg-color: #2e2f42;
+  --succes-state-color: #31d0aa;
+  --white-color: #ffffff;
+
+  /* Font size */
+  --title-font-size: 56px;
+  --secondary-header-font: 36px;
+  --tertiary-header-font: 20px;
+  --logo-font-size: 18px;
+  --general-text-font: 16px;
+  --small-text-font: 12px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 426px;
+    outline: 1px solid red;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* z-index: 100; */
+    background-color: var(--white-color);
+  }
+
+  .is-menu-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  #mob-menu-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: 1px solid red;
+    height: 100%;
+    padding: 40px;
+    padding-top: 80px;
+  }
+  .mob-menu-close {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 40px;
+  }
+  .header-address {
+    padding-bottom: 48px;
+  }
+
+  .header-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .mob-contacts {
+    width: 100%;
+  }
+  #menu-social-list {
+    justify-content: space-between;
+  }
+  /* ------------------ Hero ------------------- */
+  .hero-wrapper {
+    margin: 0 auto;
+  }
+  .hero {
+    max-width: 428px;
+    height: 432px;
+    /* background-position: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg-mobile.jpg");
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .hero-title {
+    display: inline-block;
+    /* text-align: center; */
+    max-width: 328px;
+    font-size: var(--secondary-header-font);
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
+  }
+  /* ------------------ Qualities ------------------- */
+
+  .qualities-list {
+    text-align: center;
+  }
+
+  /* ------------------ Team ------------------- */
+  .team {
+    padding: 96px 82px 128px 82px;
+  }
+
+  .team-list {
+    flex-direction: column;
+    row-gap: 72px;
+  }
+}

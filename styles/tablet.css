@@ -1,0 +1,147 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+
+  /* ------------------ Header ------------------- */
+
+  .header {
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-nav {
+  }
+  .header-logo {
+    color: var(--primary-heading-color);
+    line-height: 1.33;
+  }
+  #mob-menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #mob-contacts {
+    margin-right: auto;
+    width: 100%;
+  }
+  .header-nav {
+    display: flex;
+    margin-right: auto;
+  }
+  .header-list {
+    display: flex;
+  }
+
+  .header-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .header-logo {
+    margin-right: 72px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .mob-menu-open {
+    display: none;
+  }
+  .mob-menu-close {
+    display: none;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .header-address-list {
+    display: flex;
+  }
+
+  .header-link.active {
+    position: relative;
+    /* color: var(--main-font-color); */
+    color: var(--active-state-color);
+  }
+  .header-link.active::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    visibility: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: currentColor;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  #menu-social-list {
+    display: none;
+  }
+
+  /* ------------------ Hero ------------------- */
+
+  .hero-title {
+    width: 496px;
+    margin: 0 auto 48px;
+    font-size: var(--title-font-size);
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    margin-bottom: 40px;
+  }
+
+  .hero {
+    max-width: 768px;
+    height: 436px;
+    padding: 112px 0 108px;
+    /* background-position: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg-tablet.jpg");
+  }
+  /* ------------------ Qualities ------------------- */
+  .qualities-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+  .qualities-item {
+    flex-basis: calc((100% - 1 * 24px) / 2);
+  }
+
+  /* ------------------ Team------------------- */
+  .team {
+    padding: 96px 108px 104px 108px;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    text-align: center;
+  }
+
+  .team-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  /* ------------------ Address ------------------- */
+  .header-address-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
