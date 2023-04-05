@@ -1,3 +1,26 @@
+:root {
+  /* Colors */
+  --primary-brand-color: #4d5ae5;
+  --active-state-color: #404bbf;
+  --primary-heading-color: #2e2f42;
+  --general-text-color: #434455;
+  --helper-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-bg-color: #f4f4fd;
+  --overlay-color: #2e2f42;
+  --hero-bg-color: #2e2f42;
+  --succes-state-color: #31d0aa;
+  --white-color: #ffffff;
+
+  /* Font size */
+  --title-font-size: 56px;
+  --secondary-header-font: 36px;
+  --tertiary-header-font: 20px;
+  --logo-font-size: 18px;
+  --general-text-font: 16px;
+  --small-text-font: 12px;
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
@@ -25,6 +48,9 @@
       url("../images/bg-desktop.jpg");
   }
   /* ------------------ Qualities ------------------- */
+  .section.no-padding {
+    padding-bottom: 0;
+  }
   .qualities-icon-box {
     background-color: var(--light-bg-color);
     display: flex;
@@ -41,17 +67,40 @@
     flex-basis: calc((100% - 3 * 24px) / 4);
   }
 
+  .qualities-subtitle {
+    font-size: var(--tertiary-header-font);
+  }
+
   /* ------------------ Team ------------------- */
   .team {
     padding: 96px 108px 104px 108px;
   }
 
   .team-list {
-    display: flex;
-
     column-gap: 24px;
   }
   .team-item {
-    flex-basis: calc((100% - 2 * 24px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  /* ------------------ domain ------------------- */
+  .domain {
+    display: block;
+  }
+
+  /* ------------------ customers------------------- */
+
+  /* ------------------ customers------------------- */
+
+  .customers {
+    padding: 120px 0;
+  }
+
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - 5 * 24px) / 6);
   }
 }

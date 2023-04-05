@@ -16,45 +16,106 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/tablet.css" />
+    <link rel="stylesheet" href="styles/desktop.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <header class="header">
       <div class="container main-nav">
-        <nav class="header-nav">
-          <a href="/" class="header-logo logo"> <span>Web</span>Studio </a>
+        <a href="" class="header-logo logo"> <span>Web</span>Studio </a>
+        <button
+          class="mob-menu-open is-open"
+          aria-expanded="false"
+          data-btn-open
+        >
+          <svg class="mob-menu-open-icon" width="32" height="22">
+            <use href="/images/symbol-defs.svg#menu-hamburger"></use>
+          </svg>
+        </button>
 
-          <ul class="header-list list">
-            <li class="header-item item">
-              <a href="index.html" class="header-link link">Studio</a>
-            </li>
-            <li class="header-item item">
-              <a href="portfolio.html" class="header-link link active"
-                >Portfolio</a
-              >
-            </li>
-            <li class="header-item item">
-              <a href="#" class="header-link link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="menu is-menu-hidden visibile" data-menu>
+          <div class="container" id="mob-menu-container">
+            <button class="mob-menu-close" width="8" height="8" data-btn-close>
+              <svg class="modal-cross" width="8" height="8">
+                <use href="./images/symbol-defs.svg#icon-close-black"></use>
+              </svg>
+            </button>
 
-        <address class="header-address">
-          <ul class="header-address-list list">
-            <li class="address-item item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="header-link link active-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-item item">
-              <a href="tel:+110001111111" class="header-link link active-link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+            <nav class="header-nav">
+              <ul class="header-list list">
+                <li class="header-item item">
+                  <a
+                    href="index.html"
+                    class="header-link link active"
+                    data-activated-link
+                    >Studio</a
+                  >
+                </li>
+                <li class="header-item item">
+                  <a href="portfolio.html" class="header-link link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="header-item item">
+                  <a href="#" class="header-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="mob-contacts">
+              <address class="header-address">
+                <ul class="header-address-list list">
+                  <li class="address-item item">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="address-link link active-link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="address-item item">
+                    <a
+                      href="tel:+110001111111"
+                      class="address-link link active-link"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <ul id="menu-social-list" class="social-list list">
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="16" height="16">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="16" height="16">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="16" height="16">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="16" height="16">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>

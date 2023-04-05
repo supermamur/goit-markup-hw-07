@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
     <link rel="stylesheet" href="styles/tablet.css" />
-    <link rel="stylesheet" href="styles/desctop.css" />
+    <link rel="stylesheet" href="styles/desktop.css" />
 
     <title>Web Studio</title>
   </head>
@@ -32,7 +32,9 @@
           data-btn-open
         >
           <svg class="mob-menu-open-icon" width="32" height="22">
-            <use href="/images/symbol-defs.svg#menu-hamburger"></use>
+            <use
+              href="./images/symbol-defs.svg#icon-charm-menu-hamburger"
+            ></use>
           </svg>
         </button>
 
@@ -191,7 +193,7 @@
       <!--/Qualities-->
 
       <!--What are we doing?-->
-      <!-- <section class="domain section">
+      <section class="domain section">
         <div class="container">
           <h2 class="domain-title title">What are we doing</h2>
           <ul class="domain-list list">
@@ -221,12 +223,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--/What are we doing?-->
 
       <!--Section Team-->
       <section class="team section">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team-title title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
@@ -427,7 +429,7 @@
       <!--/Section Team-->
 
       <!--Customers-->
-      <!-- <section class="customers section">
+      <section class="customers section">
         <div class="container">
           <h2 class="customers-title title">Customers</h2>
           <ul class="customers-list list">
@@ -476,11 +478,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--/Customers-->
-      <!-- </main> -->
-      <!-- <footer class="footer"> -->
-      <!-- <div class="footer-container container">
+    </main>
+    <footer class="footer">
+      <div class="footer-container container">
         <div class="footer-info">
           <a href="/" class="footer-logo logo"> <span>Web</span> Studio </a>
           <p class="footer-description description">
@@ -521,9 +523,20 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <h3 class="sibscribe-title">Subscribe</h3>
+          <input type="email" />
+          <button class="subscribe-btn" type="submit">
+            Subscribe
+
+            <svg class="subscribe-icon" width="24" height="20">
+              <use src="/images/symbol-defs.svg#subscribe-icon"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-    </footer> -->
-    </main>
+    </footer>
+
     <div class="overlay is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>

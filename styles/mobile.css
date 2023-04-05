@@ -23,8 +23,12 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 426px;
-    outline: 1px solid red;
+    max-width: 396px;
+  }
+
+  .team-container {
+    max-width: 264px;
+    padding: 0;
   }
 }
 
@@ -60,7 +64,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    outline: 1px solid red;
+
     height: 100%;
     padding: 40px;
     padding-top: 80px;
@@ -96,7 +100,7 @@
     margin: 0 auto;
   }
   .hero {
-    max-width: 428px;
+    max-width: 768px;
     height: 432px;
     /* background-position: cover;
     background-repeat: no-repeat;
@@ -106,7 +110,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/bg-mobile.jpg");
+      url("../images/bg-tablet.jpg");
     padding-top: 112px;
     padding-bottom: 112px;
   }
@@ -127,6 +131,7 @@
   }
 
   /* ------------------ Team ------------------- */
+
   .team {
     padding: 96px 82px 128px 82px;
   }
