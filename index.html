@@ -62,7 +62,9 @@
                   >
                 </li>
                 <li class="header-item item">
-                  <a href="#" class="header-link link">Contacts</a>
+                  <a href="#" class="header-link link active-sm-menu"
+                    >Contacts</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -80,7 +82,7 @@
                   <li class="address-item item">
                     <a
                       href="tel:+110001111111"
-                      class="address-link link active-link"
+                      class="address-link link active-link active-sm-menu"
                       >+11 (000) 111-11-11</a
                     >
                   </li>
@@ -125,7 +127,7 @@
       <!--Section Hero-->
 
       <section class="hero">
-        <div class="hero-wrapper container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button btn" data-modal-open>
             Order Service
@@ -199,6 +201,7 @@
           <ul class="domain-list list">
             <li class="domain-item">
               <img
+                srcset="/images/work@2x.jpg 2x"
                 src="./images/work.jpg"
                 alt="desktop"
                 width="360"
@@ -207,6 +210,7 @@
             </li>
             <li class="domain-item">
               <img
+                srcset="./images/work-2@2x.jpg 2x"
                 src="./images/work-2.jpg"
                 alt="app on the screen"
                 width="360"
@@ -215,6 +219,7 @@
             </li>
             <li class="domain-item">
               <img
+                srcset="./images/work-3@2x.jpg 2x"
                 src="./images/work-3.jpg"
                 alt="app in mobile phone and laptop"
                 width="360"
@@ -228,11 +233,12 @@
 
       <!--Section Team-->
       <section class="team section">
-        <div class="container team-container">
+        <div class="container team-container container-md">
           <h2 class="team-title title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/team-1@2x.jpg 2x"
                 src="./images/team.jpg"
                 alt="team-member"
                 width="264"
@@ -281,6 +287,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-2@2x.jpg 2x"
                 src="./images/team-2.jpg"
                 alt="team-member"
                 width="264"
@@ -329,6 +336,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-3@2x.jpg 2x"
                 src="./images/team-3.jpg"
                 alt="team-member"
                 width="264"
@@ -377,6 +385,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-4@2x.jpg 2x"
                 src="./images/team-4.jpg"
                 alt="team-member"
                 width="264"
@@ -430,7 +439,7 @@
 
       <!--Customers-->
       <section class="customers section">
-        <div class="container">
+        <div class="container container-md">
           <h2 class="customers-title title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
@@ -482,7 +491,7 @@
       <!--/Customers-->
     </main>
     <footer class="footer">
-      <div class="footer-container container">
+      <div class="footer-container container container-md">
         <div class="footer-info">
           <a href="/" class="footer-logo logo"> <span>Web</span> Studio </a>
           <p class="footer-description description">
@@ -525,14 +534,17 @@
         </div>
         <div class="subscribe">
           <h3 class="sibscribe-title">Subscribe</h3>
-          <input type="email" />
-          <button class="subscribe-btn" type="submit">
-            Subscribe
-
-            <svg class="subscribe-icon" width="24" height="20">
-              <use src="/images/symbol-defs.svg#subscribe-icon"></use>
-            </svg>
-          </button>
+          <div class="sub-wrapper">
+            <input class="subscribe-input" type="email" placeholder="Email" />
+            <button class="subscribe-btn" type="submit">
+              <span class="subscribe-title"> Subscribe </span>
+              <svg class="subscribe-icon" width="24" height="24">
+                <use
+                  href="./images/symbol-defs.svg#icon-frame-footer-button"
+                ></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>

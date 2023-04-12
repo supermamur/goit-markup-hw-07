@@ -31,7 +31,9 @@
           data-btn-open
         >
           <svg class="mob-menu-open-icon" width="32" height="22">
-            <use href="/images/symbol-defs.svg#menu-hamburger"></use>
+            <use
+              href="./images/symbol-defs.svg#icon-charm-menu-hamburger"
+            ></use>
           </svg>
         </button>
 
@@ -48,13 +50,13 @@
                 <li class="header-item item">
                   <a
                     href="index.html"
-                    class="header-link link active"
+                    class="header-link link"
                     data-activated-link
                     >Studio</a
                   >
                 </li>
                 <li class="header-item item">
-                  <a href="portfolio.html" class="header-link link"
+                  <a href="portfolio.html" class="header-link link active"
                     >Portfolio</a
                   >
                 </li>
@@ -120,7 +122,7 @@
     </header>
     <main>
       <section class="projects">
-        <div class="container">
+        <div class="container container-sm">
           <h1 class="visually-hidden"></h1>
           <ul class="projects-nav list">
             <li class="projects-nav-item">
@@ -148,6 +150,7 @@
               <a href="#" class="projects-link">
                 <div class="projects-thumb">
                   <img
+                    srcset="./images/project-1@2x.jpg 2x"
                     src="./images/project-1.jpg"
                     alt="project picture"
                     width="360"
@@ -172,6 +175,7 @@
               <a href="#" class="projects-link">
                 <div class="projects-thumb">
                   <img
+                    srcset="./images/project-2@2x.jpg 2x"
                     src="./images/project-2.jpg"
                     alt="project picture"
                     width="360"
@@ -193,6 +197,7 @@
               <a href="#" class="projects-link">
                 <div class="projects-thumb">
                   <img
+                    srcset="./images/project-3@2x.jpg 2x"
                     src="./images/project-3.jpg"
                     alt="project picture"
                     width="360"
@@ -214,6 +219,7 @@
               <a href="#" class="projects-link">
                 <div class="projects-thumb">
                   <img
+                    srcset="./images/project-4@2x.jpg 2x"
                     src="./images/project-4.jpg"
                     alt="project picture"
                     width="360"
@@ -235,6 +241,7 @@
               <a href="#" class="projects-link">
                 <div class="projects-thumb">
                   <img
+                    srcset="./images/project-5@2x.jpg 2x"
                     src="./images/project-5.jpg"
                     alt="project picture"
                     width="360"
@@ -258,6 +265,7 @@
               <a href="#" class="projects-link">
                 <div class="projects-thumb">
                   <img
+                    srcset="./images/project-6@2x.jpg 2x"
                     src="./images/project-6.jpg"
                     alt="project picture"
                     width="360"
@@ -278,7 +286,8 @@
             <li class="projects-items">
               <a href="#" class="projects-link">
                 <div class="projects-thumb">
-                  <img src="./images/project-7.jpg" alt="project picture"
+                  <img srcset="./images/project-7@2x.jpg
+                  2x"src="./images/project-7.jpg" alt="project picture"
                   width="360" height300" />
                   <p class="projects-caption">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -298,6 +307,7 @@
               <a href="" class="projects-link">
                 <div class="projects-thumb">
                   <img
+                    srcset="./images/project-8@2x.jpg 2x"
                     src="./images/project-8.jpg"
                     alt="project picture"
                     width="360"
@@ -319,6 +329,7 @@
               <a href="#" class="projects-link">
                 <div class="projects-thumb">
                   <img
+                    srcset="./images/project-9@2x.jpg 2x"
                     src="./images/project-9.jpg"
                     alt="project picture"
                     width="360"
@@ -341,7 +352,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-container container">
+      <div class="footer-container container container-md">
         <div class="footer-info">
           <a href="/" class="footer-logo logo"> <span>Web</span> Studio </a>
           <p class="footer-description description">
@@ -382,8 +393,22 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <h3 class="sibscribe-title">Subscribe</h3>
+          <div class="sub-wrapper">
+            <input class="subscribe-input" type="email" placeholder="Email" />
+            <button class="subscribe-btn" type="submit">
+              <span class="subscribe-title"> Subscribe </span>
+              <svg class="subscribe-icon" width="24" height="24">
+                <use
+                  href="./images/symbol-defs.svg#icon-frame-footer-button"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
-    <script src="code.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

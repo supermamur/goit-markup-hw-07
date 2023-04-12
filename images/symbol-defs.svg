@@ -66,13 +66,9 @@
 <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
 </symbol>
 
-
 <symbol id="icon-charm-menu-hamburger" viewBox="0 0 47 32"><path style="" d=""></path><path  style="stroke: var(--color2, #2E2F42)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path></symbol>
 
 
-
-<symbol id="subscribe-icon" viewBox="0 0 32 32">
-<path d="M32 2.667l-32 15 10.227 3.156 15.773-12.323-11.998 13.488 0.010 0.003-0.012-0.003v7.345l5.735-5.576 7.265 2.242 5-23.333z"></path>
-</symbol>
+<symbol id="icon-frame-footer-button" viewBox="0 0 32 32"><path style="" d="M32.009 2.667l-32.009 15.004 10.23 3.157 15.778-12.326-12.001 13.492 0.009 0.004-0.012-0.004v7.347l5.736-5.578 7.269 2.243 5-23.34z"></path></symbol>
 </defs>
 </svg>

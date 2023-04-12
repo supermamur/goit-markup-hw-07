@@ -1,10 +1,19 @@
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 766px;
+    max-width: 768px;
   }
 
-  .team-container {
-    max-width: 552px;
+  .container-md {
+    max-width: 582px;
+  }
+
+  .link {
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary-heading-color);
   }
 
   /* ------------------ Header ------------------- */
@@ -17,8 +26,7 @@
     display: flex;
     align-items: center;
   }
-  .header-nav {
-  }
+
   .header-logo {
     color: var(--primary-heading-color);
     line-height: 1.33;
@@ -29,6 +37,7 @@
     align-items: center;
   }
   #mob-contacts {
+    display: block;
     margin-right: auto;
     width: 100%;
   }
@@ -92,7 +101,7 @@
   /* ------------------ Hero ------------------- */
 
   .hero-title {
-    width: 496px;
+    max-width: 500px;
     margin: 0 auto 48px;
     font-size: var(--title-font-size);
     line-height: 1.07;
@@ -102,12 +111,8 @@
   }
 
   .hero {
-    /* max-width: 768px; */
-    height: 436px;
-    padding: 112px 0 108px;
-    /* background-position: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
+    padding-top: 112px;
+    padding-bottom: 108px;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -127,7 +132,7 @@
 
   /* ------------------ Team------------------- */
   .team {
-    padding: 96px 108px 104px 108px;
+    padding: 96px 0;
   }
   .team-list {
     display: flex;
@@ -143,11 +148,82 @@
   }
   /* ------------------ customers------------------- */
   .customers-list {
-    column-gap: 24px;
+    /* column-gap: 24px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .customers-item {
-    flex-basis: calc((100% - 48px) / 3);
+    width: 168px;
+    flex-basis: 100% /3;
+  }
+  /* ------------------ footer------------------- */
+  /* .tablet-container-wrapper {
+    width: 552px;
+    margin-right: auto;
+    margin-left: auto;
+  } */
+  .footer-container {
+    justify-content: flex-start;
+  }
+
+  .footer-info {
+    margin-right: 24px;
+    justify-content: flex-start;
+  }
+  .footer-social {
+    align-items: flex-start;
+    margin-top: 0;
+  }
+  .subscribe {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .subscribe-btn {
+    margin-left: 24px;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+
+  .sub-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* ------------------ Project page------------------- */
+  /* ------------------ Projects------------------- */
+
+  .projects-nav {
+    justify-content: center;
+    margin-bottom: 72px;
+    flex-wrap: nowrap;
+  }
+  .projects-nav-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .projects-list {
+    flex-direction: row;
+    column-gap: 24px;
+    flex-wrap: wrap;
+  }
+  .projects-items {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/bg-desktop-2x.jpg);
   }
 }
 

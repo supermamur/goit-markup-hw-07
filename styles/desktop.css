@@ -31,21 +31,18 @@
     padding-top: 24px;
     padding-bottom: 24px;
   }
+
+  /* ------------------ Hero ------------------- */
+
+  .header-address-list {
+    flex-direction: unset;
+  }
   /* ------------------ Hero ------------------- */
   .hero {
     max-width: 1440px;
-    height: 600px;
-    padding: 188px 0;
-    background-position: cover;
-    background-repeat: no-repeat;
-    margin: auto;
-    text-align: center;
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/bg-desktop.jpg");
+    /* height: 600px; */
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
   /* ------------------ Qualities ------------------- */
   .section.no-padding {
@@ -72,9 +69,9 @@
   }
 
   /* ------------------ Team ------------------- */
-  .team {
+  /* .team {
     padding: 96px 108px 104px 108px;
-  }
+  } */
 
   .team-list {
     column-gap: 24px;
@@ -90,10 +87,9 @@
 
   /* ------------------ customers------------------- */
 
-  /* ------------------ customers------------------- */
-
   .customers {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .customers-list {
@@ -102,5 +98,37 @@
 
   .customers-item {
     flex-basis: calc((100% - 5 * 24px) / 6);
+  }
+
+  /* ------------------ Footer------------------- */
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .footer-social {
+    margin-left: 120px;
+  }
+
+  .subscribe {
+    width: 453px;
+    margin-top: 0;
+    margin-left: 80px;
+  }
+  .sub-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  /* ------------------ Project page------------------- */
+  /* ------------------ Projects------------------- */
+
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .projects-items {
+    flex-basis: calc((100% - 2 * 24px) / 3);
   }
 }
