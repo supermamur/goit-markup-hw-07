@@ -943,7 +943,7 @@ img {
   row-gap: 48px;
 }
 .projects-items {
-  width: 396px;
+  /* width: 396px; */
   /* flex-basis: calc((100% - 2 * 24px) / 3); */
 }
 /* .projects-list img {

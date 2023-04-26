@@ -162,7 +162,7 @@
     column-gap: 24px;
   }
   .projects-items {
-    width: 360px;
+    /* width: 360px; */
     flex-basis: calc((100% - 2 * 24px) / 3);
   }
 }

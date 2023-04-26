@@ -341,7 +341,7 @@
   }
   .projects-items {
     width: calc((100% - 24px) / 2);
-    width: 356px;
+    /* width: 356px; */
   }
 }
 
