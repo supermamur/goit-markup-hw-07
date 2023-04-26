@@ -23,13 +23,18 @@
 
 @media screen and (min-width: 480px) {
   .container-sm {
-    max-width: 396px;
+    /* max-width: 396px; */
+    max-width: 426px;
+  }
+  .container {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   /* ------------------ Header------------------- */
-  .header-link {
+  /* .header-link {
     font-size: unset;
-  }
+  } */
 
   /* ------------------ customers------------------- */
 
@@ -45,23 +50,25 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/bg-tablet.jpg");
+      url("../images/bg-mobile.jpg");
     padding-top: 112px;
     padding-bottom: 112px;
   }
 
-  .hero-title {
+  /* .hero-title {
     font-size: 36px;
     max-width: 320px;
     font-size: var(--secondary-header-font);
     line-height: 1.11;
     letter-spacing: 0.02em;
     margin-bottom: 72px;
-  }
+  } */
 }
 
 @media screen and (max-width: 767px) {
-  .link {
+  /* ------------------ Header------------------- */
+
+  /* .link {
     font-style: normal;
     font-size: var(--secondary-header-font);
     line-height: 1.111;
@@ -135,7 +142,7 @@
   }
   #menu-social-list {
     justify-content: space-between;
-  }
+  } */
 
   /* ------------------ Qualities ------------------- */
 
@@ -165,6 +172,6 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/bg-tablet-2x.png);
+      url(../images/bg-mobile-2x.jpg);
   }
 }

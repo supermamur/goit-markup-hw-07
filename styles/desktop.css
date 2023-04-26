@@ -32,21 +32,50 @@
     padding-bottom: 24px;
   }
 
-  /* ------------------ Hero ------------------- */
-
-  .header-address-list {
-    flex-direction: unset;
+  /* ------------------ Header ------------------- */
+  .address-list {
+    flex-direction: row;
   }
+  .header-link {
+    display: block;
+  }
+  .address-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .address-link {
+    display: glock;
+    font-size: var(--general-text-font);
+    font-weight: 400;
+    color: var(--general-text-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+  }
+
+  /* .header-address-list {
+    flex-direction: unset;
+  } */
   /* ------------------ Hero ------------------- */
   .hero {
     max-width: 1440px;
     /* height: 600px; */
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg-desktop.jpg");
   }
+
   /* ------------------ Qualities ------------------- */
   .section.no-padding {
     padding-bottom: 0;
+  }
+
+  .qualities {
+    padding-top: 120px;
   }
   .qualities-icon-box {
     background-color: var(--light-bg-color);
@@ -92,6 +121,10 @@
     padding-bottom: 120px;
   }
 
+  .customers-container {
+    display: flex;
+  }
+
   .customers-list {
     flex-wrap: nowrap;
   }
@@ -106,9 +139,6 @@
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  .footer-social {
-    margin-left: 120px;
-  }
 
   .subscribe {
     width: 453px;
@@ -117,6 +147,9 @@
   }
   .sub-wrapper {
     flex-wrap: nowrap;
+  }
+  .footer-info {
+    margin-right: 120px;
   }
 
   /* ------------------ Project page------------------- */
@@ -129,6 +162,19 @@
     column-gap: 24px;
   }
   .projects-items {
+    width: 360px;
     flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-desktop-2x.jpg);
   }
 }

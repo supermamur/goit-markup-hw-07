@@ -1,3 +1,26 @@
+:root {
+  /* Colors */
+  --primary-brand-color: #4d5ae5;
+  --active-state-color: #404bbf;
+  --primary-heading-color: #2e2f42;
+  --general-text-color: #434455;
+  --helper-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-bg-color: #f4f4fd;
+  --overlay-color: #2e2f42;
+  --hero-bg-color: #2e2f42;
+  --succes-state-color: #31d0aa;
+  --white-color: #ffffff;
+
+  /* Font size */
+  --title-font-size: 56px;
+  --secondary-header-font: 36px;
+  --tertiary-header-font: 20px;
+  --logo-font-size: 18px;
+  --general-text-font: 16px;
+  --small-text-font: 12px;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -18,7 +41,113 @@
 
   /* ------------------ Header ------------------- */
 
+  .mob-menu-open {
+    display: none;
+  }
+
+  .header-list {
+    display: unset;
+  }
+  .address-list {
+    display: unset;
+  }
+
+  /* -------- Header 768 + -------- */
+
   .header {
+    padding: 0;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    color: var(--main-font-color);
+  }
+  .footer-logo {
+    color: var(--white-color);
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-list {
+    display: flex;
+    margin-left: 76px;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .header-address {
+    margin-left: auto;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-link {
+    display: block;
+    font-size: var(--general-text-font);
+    font-weight: 500;
+    color: var(--primary-heading-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--active-state-color);
+  }
+
+  .address-item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  .address-link {
+    font-size: var(--small-text-font);
+    font-weight: 400;
+    color: var(--general-text-color);
+    line-height: 1.333;
+    letter-spacing: 0.04em;
+    /* padding: 24px 0; */
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-link:hover,
+  .address-link:focus {
+    color: var(--active-state-color);
+  }
+
+  .header-link.active {
+    position: relative;
+    color: var(--active-state-color);
+  }
+
+  .header-link.active::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    visibility: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: currentColor;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* .header {
     border-bottom: 1px solid var(--accent-color);
   }
 
@@ -40,8 +169,8 @@
     display: block;
     margin-right: auto;
     width: 100%;
-  }
-  .header-nav {
+  } */
+  /* .header-nav {
     display: flex;
     margin-right: auto;
   }
@@ -74,14 +203,13 @@
 
   .header-address-list {
     display: flex;
-  }
+  } */
 
-  .header-link.active {
+  /* .header-link.active {
     position: relative;
-    /* color: var(--main-font-color); */
     color: var(--active-state-color);
-  }
-  .header-link.active::after {
+  } */
+  /* .header-link.active::after {
     display: block;
     content: "";
     position: absolute;
@@ -93,10 +221,10 @@
     border-radius: 2px;
     background-color: currentColor;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  #menu-social-list {
+  } */
+  /* #menu-social-list {
     display: none;
-  }
+  } */
 
   /* ------------------ Hero ------------------- */
 
@@ -118,7 +246,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/bg-desktop.jpg");
+      url("../images/bg-tablet.jpg");
   }
   /* ------------------ Qualities ------------------- */
   .qualities-list {
@@ -169,6 +297,7 @@
 
   .footer-info {
     margin-right: 24px;
+    margin-bottom: 0;
     justify-content: flex-start;
   }
   .footer-social {
@@ -181,6 +310,7 @@
   }
 
   .subscribe-btn {
+    margin-top: 0;
     margin-left: 24px;
   }
 
@@ -211,6 +341,7 @@
   }
   .projects-items {
     width: calc((100% - 24px) / 2);
+    width: 356px;
   }
 }
 
@@ -223,7 +354,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/bg-desktop-2x.jpg);
+      url(../images/bg-tablet-2x.png);
   }
 }
 
